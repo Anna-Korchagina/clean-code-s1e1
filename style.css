@@ -1,10 +1,10 @@
 /* Basic Style */
-body {
+.wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-.tite{
+.description__tite{
   display: none;
 }
 .description {
@@ -26,7 +26,7 @@ body {
 }
 
 }
-.wraper {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
