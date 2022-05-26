@@ -72,7 +72,7 @@ var createNewTaskElement=function(taskString){
     listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
     return listItem;
-}
+};
 
 
 
@@ -88,7 +88,7 @@ var addTask=function(){
 
     taskInput.value="";
 
-}
+};
 
 //Edit an existing task.
 
@@ -129,7 +129,7 @@ var deleteTask=function(){
     //Remove the parent list item from the ul.
     ul.removeChild(listItem);
 
-}
+};
 
 
 //Mark task completed
@@ -141,7 +141,7 @@ var taskCompleted=function(){
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
-}
+};
 
 
 var taskIncomplete=function(){
@@ -152,13 +152,13 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
-}
+};
 
 
 
 var ajaxRequest=function(){
     console.log("AJAX Request");
-}
+};
 
 //The glue to hold it all together.
 
@@ -183,7 +183,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     deleteButton.onclick=deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
     checkBox.onchange=checkBoxEventHandler;
-}
+};
 
 //cycle over incompleteTaskHolder ul list items
 //for each list item
