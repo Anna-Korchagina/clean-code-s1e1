@@ -1,6 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Eisenhower matrix how to make decisions on what's urgent and important">
+  <meta name="keywords" content="The Eisenhower Matrix">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
         rel="stylesheet" type="text/css">
@@ -8,24 +13,25 @@
 </head>
 <body>
 
-  <div class="description">
+  <header class="description">
+    <h1 class="tite">Матрица Эйзенхауэра</h1>
     <img class="description__img" src="./eisenhower-matrix.jpg" 
             alt="Матрица Эйзенхауэра – как инструмент расстановки приоритетов.">
     <a class="description__link" href="https://goal-life.com/page/method/matrix-eisenhower">
             Want more details?</a>
-  </div>
+  </header>
 
-  <div class="wraper">
+  <main class="wraper">
 
-    <p class="item item_top">
+    <section class="item item_top">
       <label class="item__title" for="new-task">Add Item</label>
       <div class="item__content">
         <input class="item__text text input" id="new-task" type="text">
         <button class="item__btn btn">Add</button>
       </div>
-    </p>
+    </section>
 
-    <div class="action">
+    <section class="action">
       <h3 class="action__title">Todo</h3>
       <ul class="action__list action__list_incompleted">
         <li class="action__item">
@@ -47,9 +53,9 @@
           </button>
         </li>
       </ul>
-    </div>
+    </section>
 
-    <div class="action">
+    <section class="action">
       <h3 class="action__title">Completed</h3>
       <ul class="action__list action__list_completed">
         <li class="action__item">
@@ -62,9 +68,10 @@
           </button>
         </li>
       </ul>
-    </div>
+    </section>
 
-  </div>
+  </main>
+
   <script src="app.js"></script>
 </body>
 </html>
